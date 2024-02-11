@@ -1,0 +1,553 @@
+snns/krui.c: In function ‘make_exception’:
+snns/krui.c:25:21: warning: implicit declaration of function ‘PyInt_FromLong’; did you mean ‘PyLong_FromLong’? [-Wimplicit-function-declaration]
+  if(err > 0) return PyInt_FromLong(err);
+                     ^~~~~~~~~~~~~~
+                     PyLong_FromLong
+snns/krui.c:25:21: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  if(err > 0) return PyInt_FromLong(err);
+                     ^~~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘snns_int_arg_with_err’:
+snns/krui.c:37:8: warning: implicit declaration of function ‘PyInt_AsLong’; did you mean ‘PyLong_AsLong’? [-Wimplicit-function-declaration]
+  num = PyInt_AsLong(arg);
+        ^~~~~~~~~~~~
+        PyLong_AsLong
+snns/krui.c: In function ‘snns_string_arg_with_err’:
+snns/krui.c:53:9: warning: implicit declaration of function ‘PyString_AsString’; did you mean ‘PyBytes_AsString’? [-Wimplicit-function-declaration]
+  text = PyString_AsString(arg);
+         ^~~~~~~~~~~~~~~~~
+         PyBytes_AsString
+snns/krui.c:53:7: warning: assignment to ‘char *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+  text = PyString_AsString(arg);
+       ^
+snns/krui.c: In function ‘wrap_pattern_set_info’:
+snns/krui.c:69:7: warning: assignment to ‘PyObject *’ {aka ‘struct _object *’} from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+   ret = PyInt_FromLong(ps->number_of_pattern);
+       ^
+snns/krui.c:71:7: warning: assignment to ‘PyObject *’ {aka ‘struct _object *’} from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+   ret = PyInt_FromLong(ps->virtual_no_of_pattern);
+       ^
+snns/krui.c:73:7: warning: assignment to ‘PyObject *’ {aka ‘struct _object *’} from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+   ret = PyInt_FromLong(ps->output_present);
+       ^
+snns/krui.c:75:7: warning: assignment to ‘PyObject *’ {aka ‘struct _object *’} from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+   ret = PyInt_FromLong(ps->fixed_fixsizes);
+       ^
+snns/krui.c:77:7: warning: assignment to ‘PyObject *’ {aka ‘struct _object *’} from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+   ret = PyInt_FromLong(ps->in_fixsize);
+       ^
+snns/krui.c:79:7: warning: assignment to ‘PyObject *’ {aka ‘struct _object *’} from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+   ret = PyInt_FromLong(ps->out_fixsize);
+       ^
+snns/krui.c:84:6: warning: passing argument 3 of ‘PyTuple_SetItem’ makes pointer from integer without a cast [-Wint-conversion]
+      PyInt_FromLong(ps->in_max_dim_sizes[i]));
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/python3.7m/Python.h:107,
+                 from snns/krui.c:16:
+/usr/include/python3.7m/tupleobject.h:46:57: note: expected ‘PyObject *’ {aka ‘struct _object *’} but argument is of type ‘int’
+ PyAPI_FUNC(int) PyTuple_SetItem(PyObject *, Py_ssize_t, PyObject *);
+                                                         ^~~~~~~~~~
+snns/krui.c:90:6: warning: passing argument 3 of ‘PyTuple_SetItem’ makes pointer from integer without a cast [-Wint-conversion]
+      PyInt_FromLong(ps->out_max_dim_sizes[i]));
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/python3.7m/Python.h:107,
+                 from snns/krui.c:16:
+/usr/include/python3.7m/tupleobject.h:46:57: note: expected ‘PyObject *’ {aka ‘struct _object *’} but argument is of type ‘int’
+ PyAPI_FUNC(int) PyTuple_SetItem(PyObject *, Py_ssize_t, PyObject *);
+                                                         ^~~~~~~~~~
+snns/krui.c:96:6: warning: passing argument 3 of ‘PyTuple_SetItem’ makes pointer from integer without a cast [-Wint-conversion]
+      PyInt_FromLong(ps->in_min_dim_sizes[i]));
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/python3.7m/Python.h:107,
+                 from snns/krui.c:16:
+/usr/include/python3.7m/tupleobject.h:46:57: note: expected ‘PyObject *’ {aka ‘struct _object *’} but argument is of type ‘int’
+ PyAPI_FUNC(int) PyTuple_SetItem(PyObject *, Py_ssize_t, PyObject *);
+                                                         ^~~~~~~~~~
+snns/krui.c:102:6: warning: passing argument 3 of ‘PyTuple_SetItem’ makes pointer from integer without a cast [-Wint-conversion]
+      PyInt_FromLong(ps->out_min_dim_sizes[i]));
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/python3.7m/Python.h:107,
+                 from snns/krui.c:16:
+/usr/include/python3.7m/tupleobject.h:46:57: note: expected ‘PyObject *’ {aka ‘struct _object *’} but argument is of type ‘int’
+ PyAPI_FUNC(int) PyTuple_SetItem(PyObject *, Py_ssize_t, PyObject *);
+                                                         ^~~~~~~~~~
+snns/krui.c:108:5: warning: implicit declaration of function ‘PyString_FromString’; did you mean ‘PyLong_FromString’? [-Wimplicit-function-declaration]
+     PyString_FromString(ps->class_names[i]));
+     ^~~~~~~~~~~~~~~~~~~
+     PyLong_FromString
+snns/krui.c:108:5: warning: passing argument 3 of ‘PyTuple_SetItem’ makes pointer from integer without a cast [-Wint-conversion]
+     PyString_FromString(ps->class_names[i]));
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/python3.7m/Python.h:107,
+                 from snns/krui.c:16:
+/usr/include/python3.7m/tupleobject.h:46:57: note: expected ‘PyObject *’ {aka ‘struct _object *’} but argument is of type ‘int’
+ PyAPI_FUNC(int) PyTuple_SetItem(PyObject *, Py_ssize_t, PyObject *);
+                                                         ^~~~~~~~~~
+snns/krui.c:114:5: warning: passing argument 3 of ‘PyTuple_SetItem’ makes pointer from integer without a cast [-Wint-conversion]
+     PyInt_FromLong(ps->class_redistribution[i]));
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/python3.7m/Python.h:107,
+                 from snns/krui.c:16:
+/usr/include/python3.7m/tupleobject.h:46:57: note: expected ‘PyObject *’ {aka ‘struct _object *’} but argument is of type ‘int’
+ PyAPI_FUNC(int) PyTuple_SetItem(PyObject *, Py_ssize_t, PyObject *);
+                                                         ^~~~~~~~~~
+snns/krui.c:123:10: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+   return PyInt_FromLong(ps->class_distrib_active);
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+snns/krui.c:125:10: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+   return PyString_FromString(ps->remap_function ? ps->remap_function : "");
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘wrap_pattern_descriptor’:
+snns/krui.c:142:6: warning: passing argument 3 of ‘PyTuple_SetItem’ makes pointer from integer without a cast [-Wint-conversion]
+      PyInt_FromLong(pd->input_dim_sizes[i]));
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/python3.7m/Python.h:107,
+                 from snns/krui.c:16:
+/usr/include/python3.7m/tupleobject.h:46:57: note: expected ‘PyObject *’ {aka ‘struct _object *’} but argument is of type ‘int’
+ PyAPI_FUNC(int) PyTuple_SetItem(PyObject *, Py_ssize_t, PyObject *);
+                                                         ^~~~~~~~~~
+snns/krui.c:145:7: warning: assignment to ‘PyObject *’ {aka ‘struct _object *’} from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+   ret = PyInt_FromLong(pd->input_fixsize);
+       ^
+snns/krui.c:150:6: warning: passing argument 3 of ‘PyTuple_SetItem’ makes pointer from integer without a cast [-Wint-conversion]
+      PyInt_FromLong(pd->output_dim_sizes[i]));
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/python3.7m/Python.h:107,
+                 from snns/krui.c:16:
+/usr/include/python3.7m/tupleobject.h:46:57: note: expected ‘PyObject *’ {aka ‘struct _object *’} but argument is of type ‘int’
+ PyAPI_FUNC(int) PyTuple_SetItem(PyObject *, Py_ssize_t, PyObject *);
+                                                         ^~~~~~~~~~
+snns/krui.c:153:7: warning: assignment to ‘PyObject *’ {aka ‘struct _object *’} from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+   ret = PyInt_FromLong(pd->output_fixsize);
+       ^
+snns/krui.c:155:7: warning: assignment to ‘PyObject *’ {aka ‘struct _object *’} from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+   ret = PyInt_FromLong(pd->my_class);
+       ^
+snns/krui.c: In function ‘pattern_set_info_getattr’:
+snns/krui.c:178:73: warning: passing argument 2 of ‘wrap_pattern_set_info’ makes pointer from integer without a cast [-Wint-conversion]
+  return wrap_pattern_set_info(&((snns_pattern_set_info_object *)o)->psi,PyString_AsString(attrname));
+                                                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+snns/krui.c:63:51: note: expected ‘char *’ but argument is of type ‘int’
+ wrap_pattern_set_info(pattern_set_info *ps, char *attr)
+                                             ~~~~~~^~~~
+snns/krui.c: In function ‘pattern_descriptor_getattr’:
+snns/krui.c:184:76: warning: passing argument 2 of ‘wrap_pattern_descriptor’ makes pointer from integer without a cast [-Wint-conversion]
+  return wrap_pattern_descriptor(&((snns_pattern_descriptor_object *)o)->pd,PyString_AsString(attrname));
+                                                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+snns/krui.c:134:55: note: expected ‘char *’ but argument is of type ‘int’
+ wrap_pattern_descriptor(pattern_descriptor *pd, char *attr)
+                                                 ~~~~~~^~~~
+snns/krui.c: At top level:
+snns/krui.c:187:50: warning: missing braces around initializer [-Wmissing-braces]
+ static PyTypeObject snns_pattern_set_info_type = {
+                                                  ^
+snns/krui.c:190:5: warning: initialization of ‘long int’ from ‘char *’ makes integer from pointer without a cast [-Wint-conversion]
+     "krui.pattern_set_info",   /*tp_name*/
+     ^~~~~~~~~~~~~~~~~~~~~~~
+snns/krui.c:190:5: note: (near initialization for ‘snns_pattern_set_info_type.tp_basicsize’)
+snns/krui.c:205:5: warning: initialization of ‘int (*)(PyObject *, PyObject *, PyObject *)’ {aka ‘int (*)(struct _object *, struct _object *, struct _object *)’} from incompatible pointer type ‘PyObject * (*)(PyObject *, PyObject *)’ {aka ‘struct _object * (*)(struct _object *, struct _object *)’} [-Wincompatible-pointer-types]
+     pattern_set_info_getattr,                         /*tp_getattro*/
+     ^~~~~~~~~~~~~~~~~~~~~~~~
+snns/krui.c:205:5: note: (near initialization for ‘snns_pattern_set_info_type.tp_setattro’)
+In file included from /usr/include/python3.7m/pytime.h:6,
+                 from /usr/include/python3.7m/Python.h:87,
+                 from snns/krui.c:16:
+/usr/include/python3.7m/object.h:671:29: warning: initialization of ‘const char *’ from ‘long unsigned int’ makes pointer from integer without a cast [-Wint-conversion]
+ #define Py_TPFLAGS_DEFAULT  ( \
+                             ^
+snns/krui.c:208:5: note: in expansion of macro ‘Py_TPFLAGS_DEFAULT’
+     Py_TPFLAGS_DEFAULT,        /*tp_flags*/
+     ^~~~~~~~~~~~~~~~~~
+/usr/include/python3.7m/object.h:671:29: note: (near initialization for ‘snns_pattern_set_info_type.tp_doc’)
+ #define Py_TPFLAGS_DEFAULT  ( \
+                             ^
+snns/krui.c:208:5: note: in expansion of macro ‘Py_TPFLAGS_DEFAULT’
+     Py_TPFLAGS_DEFAULT,        /*tp_flags*/
+     ^~~~~~~~~~~~~~~~~~
+snns/krui.c:209:5: warning: initialization of ‘int (*)(PyObject *, int (*)(PyObject *, void *), void *)’ {aka ‘int (*)(struct _object *, int (*)(struct _object *, void *), void *)’} from incompatible pointer type ‘char *’ [-Wincompatible-pointer-types]
+     "equivalent of the pattern_set_info struct",           /* tp_doc */
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+snns/krui.c:209:5: note: (near initialization for ‘snns_pattern_set_info_type.tp_traverse’)
+snns/krui.c:187:50: warning: missing braces around initializer [-Wmissing-braces]
+ static PyTypeObject snns_pattern_set_info_type = {
+                                                  ^
+snns/krui.c:212:52: warning: missing braces around initializer [-Wmissing-braces]
+ static PyTypeObject snns_pattern_descriptor_type = {
+                                                    ^
+snns/krui.c:215:5: warning: initialization of ‘long int’ from ‘char *’ makes integer from pointer without a cast [-Wint-conversion]
+     "krui.pattern_descriptor",   /*tp_name*/
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+snns/krui.c:215:5: note: (near initialization for ‘snns_pattern_descriptor_type.tp_basicsize’)
+snns/krui.c:230:5: warning: initialization of ‘int (*)(PyObject *, PyObject *, PyObject *)’ {aka ‘int (*)(struct _object *, struct _object *, struct _object *)’} from incompatible pointer type ‘PyObject * (*)(PyObject *, PyObject *)’ {aka ‘struct _object * (*)(struct _object *, struct _object *)’} [-Wincompatible-pointer-types]
+     pattern_descriptor_getattr,                         /*tp_getattro*/
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+snns/krui.c:230:5: note: (near initialization for ‘snns_pattern_descriptor_type.tp_setattro’)
+In file included from /usr/include/python3.7m/pytime.h:6,
+                 from /usr/include/python3.7m/Python.h:87,
+                 from snns/krui.c:16:
+/usr/include/python3.7m/object.h:671:29: warning: initialization of ‘const char *’ from ‘long unsigned int’ makes pointer from integer without a cast [-Wint-conversion]
+ #define Py_TPFLAGS_DEFAULT  ( \
+                             ^
+snns/krui.c:233:5: note: in expansion of macro ‘Py_TPFLAGS_DEFAULT’
+     Py_TPFLAGS_DEFAULT,        /*tp_flags*/
+     ^~~~~~~~~~~~~~~~~~
+/usr/include/python3.7m/object.h:671:29: note: (near initialization for ‘snns_pattern_descriptor_type.tp_doc’)
+ #define Py_TPFLAGS_DEFAULT  ( \
+                             ^
+snns/krui.c:233:5: note: in expansion of macro ‘Py_TPFLAGS_DEFAULT’
+     Py_TPFLAGS_DEFAULT,        /*tp_flags*/
+     ^~~~~~~~~~~~~~~~~~
+snns/krui.c:234:5: warning: initialization of ‘int (*)(PyObject *, int (*)(PyObject *, void *), void *)’ {aka ‘int (*)(struct _object *, int (*)(struct _object *, void *), void *)’} from incompatible pointer type ‘char *’ [-Wincompatible-pointer-types]
+     "equivalent of the pattern_descriptor struct",           /* tp_doc */
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+snns/krui.c:234:5: note: (near initialization for ‘snns_pattern_descriptor_type.tp_traverse’)
+snns/krui.c:212:52: warning: missing braces around initializer [-Wmissing-braces]
+ static PyTypeObject snns_pattern_descriptor_type = {
+                                                    ^
+snns/krui.c: In function ‘snns_error’:
+snns/krui.c:243:9: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  return PyString_FromString(krui_error(num));
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘snns_loadNet’:
+snns/krui.c:273:15: warning: assignment to ‘char *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+  if((filename = PyString_AsString(name))) {
+               ^
+snns/krui.c: In function ‘snns_getSymbolTable’:
+snns/krui.c:309:33: warning: passing argument 3 of ‘PyDict_SetItemString’ makes pointer from integer without a cast [-Wint-conversion]
+   PyDict_SetItemString(ret,name,PyInt_FromLong(val));
+                                 ^~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/python3.7m/Python.h:109,
+                 from snns/krui.c:16:
+/usr/include/python3.7m/dictobject.h:162:79: note: expected ‘PyObject *’ {aka ‘struct _object *’} but argument is of type ‘int’
+ PyAPI_FUNC(int) PyDict_SetItemString(PyObject *dp, const char *key, PyObject *item);
+                                                                     ~~~~~~~~~~^~~~
+snns/krui.c: In function ‘snns_deleteAllPatterns’:
+snns/krui.c:357:11: warning: unused variable ‘err’ [-Wunused-variable]
+  krui_err err;
+           ^~~
+snns/krui.c: In function ‘snns_allocNewPatternSet’:
+snns/krui.c:438:9: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  return PyInt_FromLong(i);
+         ^~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘snns_getNoOfTTypeUnits’:
+snns/krui.c:456:9: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  return PyInt_FromLong(no);
+         ^~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘snns_getLearnFunc’:
+snns/krui.c:462:9: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  return PyString_FromString(krui_getLearnFunc());
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘snns_getFFLearnFunc’:
+snns/krui.c:468:9: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  return PyString_FromString(krui_getFFLearnFunc());
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘snns_getPrunFunc’:
+snns/krui.c:474:9: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  return PyString_FromString(krui_getPrunFunc());
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘snns_getInitialisationFunc’:
+snns/krui.c:487:9: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  return PyString_FromString(krui_getInitialisationFunc());
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘snns_getUpdateFunc’:
+snns/krui.c:499:9: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  return PyString_FromString(krui_getUpdateFunc());
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘snns_loadNewPatterns’:
+snns/krui.c:527:5: warning: assignment to ‘char *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+  fn = PyString_AsString(arg);
+     ^
+snns/krui.c: In function ‘build_int_tuple’:
+snns/krui.c:622:25: warning: passing argument 3 of ‘PyTuple_SetItem’ makes pointer from integer without a cast [-Wint-conversion]
+   PyTuple_SetItem(ret,i,PyInt_FromLong(array[i]));
+                         ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/python3.7m/Python.h:107,
+                 from snns/krui.c:16:
+/usr/include/python3.7m/tupleobject.h:46:57: note: expected ‘PyObject *’ {aka ‘struct _object *’} but argument is of type ‘int’
+ PyAPI_FUNC(int) PyTuple_SetItem(PyObject *, Py_ssize_t, PyObject *);
+                                                         ^~~~~~~~~~
+snns/krui.c: In function ‘snns_setClassDistribution’:
+snns/krui.c:699:35: warning: pointer targets in passing argument 1 of ‘krui_setClassDistribution’ differ in signedness [-Wpointer-sign]
+   err = krui_setClassDistribution(entries);
+                                   ^~~~~~~
+In file included from snns/krui.c:21:
+../kernel/sources/kr_ui.h:195:18: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+ extern krui_err  krui_setClassDistribution(unsigned int *classDist);
+                  ^~~~~~~~~~~~~~~~~~~~~~~~~
+snns/krui.c:675:6: warning: unused variable ‘num’ [-Wunused-variable]
+  int num;
+      ^~~
+snns/krui.c: In function ‘snns_DefTrainSubPat’:
+snns/krui.c:775:9: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  return PyInt_FromLong(max_n_pos);
+         ^~~~~~~~~~~~~~~~~~~~~~~~~
+snns/krui.c:763:6: warning: unused variable ‘i’ [-Wunused-variable]
+  int i,max_n_pos;
+      ^
+snns/krui.c: In function ‘snns_DefShowSubPat’:
+snns/krui.c:786:6: warning: unused variable ‘i’ [-Wunused-variable]
+  int i;
+      ^
+snns/krui.c: In function ‘snns_AlignSubPat’:
+snns/krui.c:820:10: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+   return PyInt_FromLong(no);
+          ^~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘snns_getNoOfFunctions’:
+snns/krui.c:1060:9: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  return PyInt_FromLong(krui_getNoOfFunctions());
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘snns_isFunction’:
+snns/krui.c:1080:9: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  return PyInt_FromLong(krui_isFunction(name,functype));
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘snns_setFirstFTypeEntry’:
+snns/krui.c:1098:9: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  return PyInt_FromLong(krui_setFirstFTypeEntry());
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘snns_setNextFTypeEntry’:
+snns/krui.c:1104:9: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  return PyInt_FromLong(krui_setNextFTypeEntry());
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘snns_setFTypeEntry’:
+snns/krui.c:1111:12: warning: assignment to ‘char *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+  ftypename = PyString_AsString(args);
+            ^
+snns/krui.c:1113:9: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  return PyInt_FromLong(krui_setFTypeEntry(ftypename));
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘snns_getFTypeName’:
+snns/krui.c:1121:19: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  if(ftype) return PyString_FromString(krui_getFTypeName());
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘snns_getFTypeActFuncName’:
+snns/krui.c:1136:22: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  if(funcname) return PyString_FromString(funcname);
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘snns_getFTypeOutFuncName’:
+snns/krui.c:1151:22: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  if(funcname) return PyString_FromString(funcname);
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘snns_setFirstFTypeSite’:
+snns/krui.c:1164:9: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  return PyInt_FromLong(krui_setFirstFTypeSite());
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘snns_setNextFTypeSite’:
+snns/krui.c:1170:9: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  return PyInt_FromLong(krui_setNextFTypeSite());
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘snns_getFTypeSiteName’:
+snns/krui.c:1178:22: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  if(funcname) return PyString_FromString(funcname);
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘snns_deleteFTypeEntry’:
+snns/krui.c:1193:12: warning: assignment to ‘char *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+  ftypename = PyString_AsString(args);
+            ^
+snns/krui.c: In function ‘snns_createFTypeEntry’:
+snns/krui.c:1215:16: warning: assignment to ‘char *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+    nameslist[i]=PyString_AsString(PySequence_GetItem(sitenames,i));
+                ^
+snns/krui.c: In function ‘snns_isConnected’:
+snns/krui.c:1302:9: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  return PyInt_FromLong(ret);
+         ^~~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘snns_getErrorCode’:
+snns/krui.c:1361:9: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  return PyInt_FromLong(krui_getErrorCode());
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘snns_getSiteTable’:
+snns/krui.c:1450:35: warning: passing argument 3 of ‘PyDict_SetItemString’ makes pointer from integer without a cast [-Wint-conversion]
+  if(PyDict_SetItemString(dict, a, PyString_FromString(b)) == -1) return NULL;
+                                   ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/python3.7m/Python.h:109,
+                 from snns/krui.c:16:
+/usr/include/python3.7m/dictobject.h:162:79: note: expected ‘PyObject *’ {aka ‘struct _object *’} but argument is of type ‘int’
+ PyAPI_FUNC(int) PyDict_SetItemString(PyObject *dp, const char *key, PyObject *item);
+                                                                     ~~~~~~~~~~^~~~
+snns/krui.c:1452:36: warning: passing argument 3 of ‘PyDict_SetItemString’ makes pointer from integer without a cast [-Wint-conversion]
+   if(PyDict_SetItemString(dict, a, PyString_FromString(b)) == -1) return NULL;
+                                    ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/python3.7m/Python.h:109,
+                 from snns/krui.c:16:
+/usr/include/python3.7m/dictobject.h:162:79: note: expected ‘PyObject *’ {aka ‘struct _object *’} but argument is of type ‘int’
+ PyAPI_FUNC(int) PyDict_SetItemString(PyObject *dp, const char *key, PyObject *item);
+                                                                     ~~~~~~~~~~^~~~
+snns/krui.c: In function ‘snns_getSiteTableFuncName’:
+snns/krui.c:1462:4: warning: assignment to ‘char *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+  a = PyString_AsString(args);
+    ^
+snns/krui.c:1465:15: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  if(b) return PyString_FromString(b);
+               ^~~~~~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘snns_setFirstSite’:
+snns/krui.c:1475:9: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  return PyInt_FromLong(ret);
+         ^~~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘snns_setNextSite’:
+snns/krui.c:1484:9: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  return PyInt_FromLong(ret);
+         ^~~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘snns_getSiteFuncName’:
+snns/krui.c:1504:17: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  if(ret) return PyString_FromString(ret);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘snns_getSiteName’:
+snns/krui.c:1513:17: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  if(ret) return PyString_FromString(ret);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘snns_deleteSite’:
+snns/krui.c:1532:9: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  return PyInt_FromLong(krui_deleteSite());
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘snns_getNoOfUnits’:
+snns/krui.c:1538:9: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  return PyInt_FromLong(krui_getNoOfUnits());
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘snns_getNoOfSpecialInputUnits’:
+snns/krui.c:1544:9: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  return PyInt_FromLong(krui_getNoOfSpecialInputUnits());
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘snns_getNoOfSpecialOutputUnits’:
+snns/krui.c:1550:9: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  return PyInt_FromLong(krui_getNoOfSpecialOutputUnits());
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘snns_getFirstUnit’:
+snns/krui.c:1556:9: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  return PyInt_FromLong(krui_getFirstUnit());
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘snns_getNextUnit’:
+snns/krui.c:1562:9: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  return PyInt_FromLong(krui_getNextUnit());
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘snns_getCurrentUnit’:
+snns/krui.c:1574:9: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  return PyInt_FromLong(krui_getCurrentUnit());
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘snns_int_arg_char_ret’:
+snns/krui.c:1587:17: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  if(ret) return PyString_FromString(ret);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘snns_searchUnitName’:
+snns/krui.c:1621:4: warning: assignment to ‘char *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+  a = PyString_AsString(args);
+    ^
+snns/krui.c:1623:9: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  return PyInt_FromLong(krui_searchUnitName(a));
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘snns_searchNextUnitName’:
+snns/krui.c:1629:9: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  return PyInt_FromLong(krui_searchNextUnitName());
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘snns_setUnitInitialActivation’:
+snns/krui.c:1713:11: warning: unused variable ‘err’ [-Wunused-variable]
+  krui_err err;
+           ^~~
+snns/krui.c: In function ‘snns_setUnitBias’:
+snns/krui.c:1724:11: warning: unused variable ‘err’ [-Wunused-variable]
+  krui_err err;
+           ^~~
+snns/krui.c: In function ‘snns_getUnitSubnetNo’:
+snns/krui.c:1751:9: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  return PyInt_FromLong(ret);
+         ^~~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘snns_getUnitLayerNo’:
+snns/krui.c:1761:9: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  return PyInt_FromLong(ret);
+         ^~~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘snns_getUnitNoAtPosition’:
+snns/krui.c:1854:9: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  return PyInt_FromLong(krui_getUnitNoAtPosition(&pos,net));
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘snns_getUnitNoNearPosition’:
+snns/krui.c:1865:9: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  return PyInt_FromLong(krui_getUnitNoNearPosition(&pos,net,range,width));
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘snns_getUnitTType’:
+snns/krui.c:1900:9: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  return PyInt_FromLong(ret);
+         ^~~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘snns_isUnitFrozen’:
+snns/krui.c:1910:9: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  return PyInt_FromLong(ret);
+         ^~~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘snns_getUnitInputType’:
+snns/krui.c:1920:9: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  return PyInt_FromLong(ret);
+         ^~~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘snns_createDefaultUnit’:
+snns/krui.c:1973:14: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  else return PyInt_FromLong(ret);
+              ^~~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘snns_createUnit’:
+snns/krui.c:1985:14: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  else return PyInt_FromLong(ret);
+              ^~~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘snns_copyUnit’:
+snns/krui.c:2001:14: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  else return PyInt_FromLong(ret);
+              ^~~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘snns_createFTypeUnit’:
+snns/krui.c:2009:7: warning: assignment to ‘char *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+  name = PyString_AsString(args);
+       ^
+snns/krui.c:2013:14: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  else return PyInt_FromLong(ret);
+              ^~~~~~~~~~~~~~~~~~~
+snns/krui.c: In function ‘initkrui’:
+snns/krui.c:2909:6: warning: implicit declaration of function ‘Py_InitModule3’; did you mean ‘Py_Initialize’? [-Wimplicit-function-declaration]
+  m = Py_InitModule3("krui", MylibMethods,"SNNS kernel interface");
+      ^~~~~~~~~~~~~~
+      Py_Initialize
+snns/krui.c:2909:4: warning: assignment to ‘PyObject *’ {aka ‘struct _object *’} from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+  m = Py_InitModule3("krui", MylibMethods,"SNNS kernel interface");
+    ^
+snns/krui.c:2911:34: warning: passing argument 3 of ‘PyModule_AddObject’ makes pointer from integer without a cast [-Wint-conversion]
+   PyModule_AddObject(m,cip->name,PyInt_FromLong(cip->value));
+                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/python3.7m/Python.h:137,
+                 from snns/krui.c:16:
+/usr/include/python3.7m/modsupport.h:117:62: note: expected ‘PyObject *’ {aka ‘struct _object *’} but argument is of type ‘int’
+ PyAPI_FUNC(int) PyModule_AddObject(PyObject *, const char *, PyObject *);
+                                                              ^~~~~~~~~~
+snns/krui.c:2914:34: warning: passing argument 3 of ‘PyModule_AddObject’ makes pointer from integer without a cast [-Wint-conversion]
+  PyModule_AddObject(m,"__doc__", PyString_FromString(moduledoc));
+                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/python3.7m/Python.h:137,
+                 from snns/krui.c:16:
+/usr/include/python3.7m/modsupport.h:117:62: note: expected ‘PyObject *’ {aka ‘struct _object *’} but argument is of type ‘int’
+ PyAPI_FUNC(int) PyModule_AddObject(PyObject *, const char *, PyObject *);
+                                                              ^~~~~~~~~~
+snns/krui.c:2917:53: warning: ‘return’ with no value, in function returning non-void
+  if (PyType_Ready(&snns_pattern_set_info_type) < 0) return;
+                                                     ^~~~~~
+snns/krui.c:2816:1: note: declared here
+ initkrui(void)
+ ^~~~~~~~
+snns/krui.c:2922:12: warning: passing argument 3 of ‘PyDict_SetItemString’ makes pointer from integer without a cast [-Wint-conversion]
+    txt[0], PyString_FromString(txt[1]));
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/python3.7m/Python.h:109,
+                 from snns/krui.c:16:
+/usr/include/python3.7m/dictobject.h:162:79: note: expected ‘PyObject *’ {aka ‘struct _object *’} but argument is of type ‘int’
+ PyAPI_FUNC(int) PyDict_SetItemString(PyObject *dp, const char *key, PyObject *item);
+                                                                     ~~~~~~~~~~^~~~
+snns/krui.c:2928:55: warning: ‘return’ with no value, in function returning non-void
+  if (PyType_Ready(&snns_pattern_descriptor_type) < 0) return;
+                                                       ^~~~~~
+snns/krui.c:2816:1: note: declared here
+ initkrui(void)
+ ^~~~~~~~
+snns/krui.c:2933:12: warning: passing argument 3 of ‘PyDict_SetItemString’ makes pointer from integer without a cast [-Wint-conversion]
+    txt[0], PyString_FromString(txt[1]));
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/python3.7m/Python.h:109,
+                 from snns/krui.c:16:
+/usr/include/python3.7m/dictobject.h:162:79: note: expected ‘PyObject *’ {aka ‘struct _object *’} but argument is of type ‘int’
+ PyAPI_FUNC(int) PyDict_SetItemString(PyObject *dp, const char *key, PyObject *item);
+                                                                     ~~~~~~~~~~^~~~
+snns/krui.c:2827:15: warning: unused variable ‘dict’ [-Wunused-variable]
+  PyObject *m,*dict;
+               ^~~~
+At top level:
+snns/krui.c:1958:1: warning: ‘snns_setUnitValueA’ defined but not used [-Wunused-function]
+ snns_setUnitValueA(PyObject *self, PyObject *args)
+ ^~~~~~~~~~~~~~~~~~

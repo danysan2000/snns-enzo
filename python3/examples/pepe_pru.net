@@ -1,0 +1,37 @@
+SNNS network definition file V1.4-3D
+generated at Fri Aug 11 15:23:46 2023
+
+network name : pepe_pru
+source files :
+no. of units : 8
+no. of connections : 0
+no. of unit types : 0
+no. of site types : 0
+
+
+learning function : Std_Backpropagation
+update function   : Topological_Order
+init function     : Randomize_Weights
+
+
+unit default section :
+
+act      | bias     | st | subnet | layer | act func     | out func
+---------|----------|----|--------|-------|--------------|-------------
+ 0.00000 |  0.00000 | h  |      0 |     1 | Act_Logistic | Out_Identity 
+---------|----------|----|--------|-------|--------------|-------------
+
+
+unit definition section :
+
+no. | typeName | unitName | act      | bias     | st | position | act func | out func | sites
+----|----------|----------|----------|----------|----|----------|----------|----------|-------
+  1 |          |          |  0.00000 |  0.00000 | h  | 2,1,0    |||
+  2 |          |          |  0.00000 |  0.00000 | h  | 2,3,0    |||
+  3 |          |          |  0.00000 |  0.00000 | h  | 2,5,0    |||
+  4 |          |          |  0.00000 |  0.00000 | h  | 4,2,0    |||
+  5 |          |          |  0.00000 |  0.00000 | h  | 4,4,0    |||
+  6 |          |          |  0.00000 |  0.00000 | h  | 6,1,0    |||
+  7 |          |          |  0.00000 |  0.00000 | h  | 6,3,0    |||
+  8 |          |          |  0.00000 |  0.00000 | h  | 6,5,0    |||
+----|----------|----------|----------|----------|----|----------|----------|----------|-------

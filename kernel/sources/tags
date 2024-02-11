@@ -1,0 +1,74 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	//
+TRACE_IN	kr_newpattern.c	/^#define TRACE_IN(/;"	d	file:
+TRACE_INDENT	kr_newpattern.c	/^#define TRACE_INDENT(/;"	d	file:
+TRACE_RETURN	kr_newpattern.c	/^#define TRACE_RETURN(/;"	d	file:
+TRACE_RETURN_VOID	kr_newpattern.c	/^#define TRACE_RETURN_VOID(/;"	d	file:
+__FUNCTION__	kr_newpattern.c	/^#define __FUNCTION__ /;"	d	file:
+kr_AbsPosOfFirstSubPat	kr_newpattern.c	/^int kr_AbsPosOfFirstSubPat(int pattern)$/;"	f	typeref:typename:int
+kr_NoOfSubPatPairs	kr_newpattern.c	/^int kr_NoOfSubPatPairs(int pattern)$/;"	f	typeref:typename:int
+kr_SizeOfInputSubPat	kr_newpattern.c	/^int kr_SizeOfInputSubPat(void)$/;"	f	typeref:typename:int
+kr_SizeOfOutputSubPat	kr_newpattern.c	/^int kr_SizeOfOutputSubPat(void)$/;"	f	typeref:typename:int
+kr_TotalNoOfPattern	kr_newpattern.c	/^int kr_TotalNoOfPattern(void)$/;"	f	typeref:typename:int
+kr_TotalNoOfSubPatPairs	kr_newpattern.c	/^int kr_TotalNoOfSubPatPairs(void)$/;"	f	typeref:typename:int
+kr_getSubPatClass	kr_newpattern.c	/^extern int kr_getSubPatClass(int pat_no, int sub_no)$/;"	f	typeref:typename:int
+kr_getSubPatData	kr_newpattern.c	/^Patterns kr_getSubPatData(int pat_no, int sub_no, int io_type, int *size)$/;"	f	typeref:typename:Patterns
+kr_getSubPatternByNo	kr_newpattern.c	/^bool kr_getSubPatternByNo(int *pattern, int *sub, int n)$/;"	f	typeref:typename:bool
+kr_getSubPatternByOrder	kr_newpattern.c	/^bool kr_getSubPatternByOrder(int *pattern, int *sub)$/;"	f	typeref:typename:bool
+kr_initSubPatternOrder	kr_newpattern.c	/^krui_err kr_initSubPatternOrder(int start, int end)$/;"	f	typeref:typename:krui_err
+kr_np_AddPattern	kr_newpattern.c	/^static krui_err kr_np_AddPattern(int pat_set, int *pattern)$/;"	f	typeref:typename:krui_err	file:
+kr_np_AllocatePattern	kr_newpattern.c	/^krui_err kr_np_AllocatePattern(np_pattern_descriptor *pattern,$/;"	f	typeref:typename:krui_err
+kr_np_AllocatePatternSet	kr_newpattern.c	/^krui_err kr_np_AllocatePatternSet(int *pat_set, int number)$/;"	f	typeref:typename:krui_err
+kr_np_DefineSubPatternOrdering	kr_newpattern.c	/^static krui_err kr_np_DefineSubPatternOrdering(int pat_set, bool input, $/;"	f	typeref:typename:krui_err	file:
+kr_np_DeletePattern	kr_newpattern.c	/^static krui_err kr_np_DeletePattern(int pat_set, int pattern)$/;"	f	typeref:typename:krui_err	file:
+kr_np_DeletePatternSet	kr_newpattern.c	/^static krui_err kr_np_DeletePatternSet(int pat_set)$/;"	f	typeref:typename:krui_err	file:
+kr_np_FreePattern	kr_newpattern.c	/^void kr_np_FreePattern(np_pattern_descriptor *pattern)$/;"	f	typeref:typename:void
+kr_np_GetDescriptor	kr_newpattern.c	/^krui_err kr_np_GetDescriptor(int pat_set, int number, $/;"	f	typeref:typename:krui_err
+kr_np_GetInfo	kr_newpattern.c	/^static krui_err kr_np_GetInfo(int pat_set, np_pattern_set_info *info)$/;"	f	typeref:typename:krui_err	file:
+kr_np_GetSubPat	kr_newpattern.c	/^static krui_err kr_np_GetSubPat(bool input, int *pos_coord, int *size_coord,$/;"	f	typeref:typename:krui_err	file:
+kr_np_GetSubPatSizes	kr_newpattern.c	/^static krui_err kr_np_GetSubPatSizes(int *input_size, int *output_size)$/;"	f	typeref:typename:krui_err	file:
+kr_np_InitPattern	kr_newpattern.c	/^static krui_err kr_np_InitPattern(void)$/;"	f	typeref:typename:krui_err	file:
+kr_np_LoadPatternFile	kr_newpattern.c	/^static krui_err kr_np_LoadPatternFile(FILE *pat_file, int *pat_set)$/;"	f	typeref:typename:krui_err	file:
+kr_np_ReallocatePatternSet	kr_newpattern.c	/^static krui_err kr_np_ReallocatePatternSet(int pat_set, int new_number)$/;"	f	typeref:typename:krui_err	file:
+kr_np_SavePatternFile	kr_newpattern.c	/^static krui_err kr_np_SavePatternFile(FILE *out_file, int pat_set)$/;"	f	typeref:typename:krui_err	file:
+kr_np_SetSubPat	kr_newpattern.c	/^static krui_err kr_np_SetSubPat(bool input, int *pos_coord, int *size_coord,$/;"	f	typeref:typename:krui_err	file:
+kr_np_ValidateInfo	kr_newpattern.c	/^static krui_err kr_np_ValidateInfo(int pat_set)$/;"	f	typeref:typename:krui_err	file:
+kr_np_align_sub_pos	kr_newpattern.c	/^static bool kr_np_align_sub_pos(int dim, int *n, int *psize, int *ssize, $/;"	f	typeref:typename:bool	file:
+kr_np_allocate_pat_mapping_entries	kr_newpattern.c	/^static bool kr_np_allocate_pat_mapping_entries(int n)$/;"	f	typeref:typename:bool	file:
+kr_np_allocate_pat_train_entries	kr_newpattern.c	/^static bool kr_np_allocate_pat_train_entries(int n)$/;"	f	typeref:typename:bool	file:
+kr_np_allocate_sub_pat_train_entries	kr_newpattern.c	/^static bool kr_np_allocate_sub_pat_train_entries(int n)$/;"	f	typeref:typename:bool	file:
+kr_np_delSym	kr_newpattern.c	/^static void kr_np_delSym(int pat_set, struct np_symtab *entry)$/;"	f	typeref:typename:void	file:
+kr_np_fill_virtual_to_void_mapping	kr_newpattern.c	/^static void kr_np_fill_virtual_to_void_mapping(int pat_set)$/;"	f	typeref:typename:void	file:
+kr_np_floatfree	kr_newpattern.c	/^static void kr_np_floatfree(float *ptr)$/;"	f	typeref:typename:void	file:
+kr_np_floatmalloc	kr_newpattern.c	/^static float *kr_np_floatmalloc(int size)$/;"	f	typeref:typename:float *	file:
+kr_np_gen_sub_pos	kr_newpattern.c	/^static bool kr_np_gen_sub_pos(int dim, int *n, int *psize, int *ssize, $/;"	f	typeref:typename:bool	file:
+kr_np_lookupSym	kr_newpattern.c	/^krui_err kr_np_lookupSym(int pat_set, char *symbol, struct np_symtab **entry)$/;"	f	typeref:typename:krui_err
+kr_np_modifyPattern	kr_newpattern.c	/^static krui_err kr_np_modifyPattern(void)$/;"	f	typeref:typename:krui_err	file:
+kr_np_order_chunk_arrays	kr_newpattern.c	/^static void kr_np_order_chunk_arrays(bool shuffle, int pattern_set)$/;"	f	typeref:typename:void	file:
+kr_np_order_chunked_pat_entries	kr_newpattern.c	/^static void kr_np_order_chunked_pat_entries(int pat_set, int start, int end)$/;"	f	typeref:typename:void	file:
+kr_np_order_pat_entries	kr_newpattern.c	/^static void kr_np_order_pat_entries(int start, int end)$/;"	f	typeref:typename:void	file:
+kr_np_order_sub_pat_entries	kr_newpattern.c	/^static void kr_np_order_sub_pat_entries(int start, int end)$/;"	f	typeref:typename:void	file:
+kr_np_pattern	kr_newpattern.c	/^int  kr_np_pattern(int mode ,int mode1 ,int pattern_no)$/;"	f	typeref:typename:int
+kr_np_physical_to_virtual	kr_newpattern.c	/^static int kr_np_physical_to_virtual(int pnum)$/;"	f	typeref:typename:int	file:
+kr_np_showPatternSTD	kr_newpattern.c	/^static krui_err kr_np_showPatternSTD(int mode)$/;"	f	typeref:typename:krui_err	file:
+kr_np_virtual_to_physical	kr_newpattern.c	/^static int kr_np_virtual_to_physical(int vnum)$/;"	f	typeref:typename:int	file:
+kr_npui_AlignSubPat	kr_newpattern.c	/^krui_err kr_npui_AlignSubPat(int *inpos, int *outpos, int *no)$/;"	f	typeref:typename:krui_err
+kr_npui_DefShowSubPat	kr_newpattern.c	/^krui_err kr_npui_DefShowSubPat(int *insize, int *outsize, $/;"	f	typeref:typename:krui_err
+kr_npui_DefTrainSubPat	kr_newpattern.c	/^krui_err kr_npui_DefTrainSubPat(int *insize, int *outsize, $/;"	f	typeref:typename:krui_err
+kr_npui_GetPatInfo	kr_newpattern.c	/^krui_err kr_npui_GetPatInfo(pattern_set_info *set_info, $/;"	f	typeref:typename:krui_err
+kr_npui_GetShapeOfSubPat	kr_newpattern.c	/^krui_err kr_npui_GetShapeOfSubPat(int *insize, int *outsize, $/;"	f	typeref:typename:krui_err
+kr_npui_allocNewPatternSet	kr_newpattern.c	/^krui_err kr_npui_allocNewPatternSet(int *set_no)$/;"	f	typeref:typename:krui_err
+kr_npui_deletePatSet	kr_newpattern.c	/^krui_err kr_npui_deletePatSet(int number)$/;"	f	typeref:typename:krui_err
+kr_npui_loadNewPatterns	kr_newpattern.c	/^krui_err kr_npui_loadNewPatterns(char *filename, int *set_no)$/;"	f	typeref:typename:krui_err
+kr_npui_saveNewPatterns	kr_newpattern.c	/^krui_err kr_npui_saveNewPatterns(char *filename, int set_no)$/;"	f	typeref:typename:krui_err
+kr_npui_setClass	kr_newpattern.c	/^krui_err kr_npui_setClass(char *classname)$/;"	f	typeref:typename:krui_err
+kr_npui_setClassDistribution	kr_newpattern.c	/^krui_err kr_npui_setClassDistribution(unsigned int *class_sizes)$/;"	f	typeref:typename:krui_err
+kr_npui_setCurrPatSet	kr_newpattern.c	/^krui_err kr_npui_setCurrPatSet(int number)$/;"	f	typeref:typename:krui_err
+kr_npui_setRemapFunction	kr_newpattern.c	/^krui_err kr_npui_setRemapFunction(char *name, float *params)$/;"	f	typeref:typename:krui_err
+kr_npui_useChunk	kr_newpattern.c	/^krui_err kr_npui_useChunk(bool active)$/;"	f	typeref:typename:krui_err
+print_page_info	kr_newpattern.c	/^static print_page_info(struct patternpage *page)$/;"	f	file:

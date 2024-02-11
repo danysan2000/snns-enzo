@@ -1,0 +1,42 @@
+SNNS network definition file V1.4-3D
+generated at Fri Aug 18 15:15:06 2023
+
+network name : dan_xor
+source files :
+no. of units : 4
+no. of connections : 8
+no. of unit types : 0
+no. of site types : 0
+
+
+learning function : BackpropMomentum
+update function   : Topological_Order
+init function     : Randomize_Weights
+
+
+unit default section :
+
+act      | bias     | st | subnet | layer | act func     | out func
+---------|----------|----|--------|-------|--------------|-------------
+ 0.00000 |  0.00000 | h  |      0 |     1 | Act_Logistic | Out_Identity 
+---------|----------|----|--------|-------|--------------|-------------
+
+
+unit definition section :
+
+no. | typeName | unitName | act      | bias     | st | position | act func | out func | sites
+----|----------|----------|----------|----------|----|----------|----------|----------|-------
+  1 |          |          |  0.00000 |  0.00000 | i  | 2,2,0    |||
+  2 |          |          |  0.00000 |  0.00000 | i  | 2,5,0    |||
+  3 |          |          |  0.00000 |  0.00000 | h  | 5,3,0    |||
+  4 |          |          |  0.00000 |  0.00000 | o  | 8,4,0    |||
+----|----------|----------|----------|----------|----|----------|----------|----------|-------
+
+
+connection definition section :
+
+target | site | source:weight
+-------|------|------------------------------------------------------------------------------------------------------------
+     3 |      | 2: 0.00000, 1: 0.00000
+     4 |      | 2: 0.00000, 1: 0.00000, 3: 0.00000
+-------|------|------------------------------------------------------------------------------------------------------------
